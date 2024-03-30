@@ -1,9 +1,11 @@
 # jquery-fxtime
-Firefox-like time element for jQuery
+Firefox-like time element plugin for jQuery
 
-## INSTALLATION
+### INSTALLATION
 
-1. Include the `jquery-fxtime.js` script in your webpage.  In addition, include jQuery, if it has not already been included.  For example,
+1. Include the `jquery-fxtime.js` script in your webpage.  In
+addition, include jQuery, if it has not already been included.  For
+example,
 
 ```html
 <!-- include jQuery, if you webpage has not already included it -->
@@ -14,7 +16,7 @@ Firefox-like time element for jQuery
 
 2. On page load in your webpage, invoke $.fn.fxtime on the desired
 HTML INPUT elements.  For example, to install fxtime on all INPUT
-elements with class `time`:
+elements with class 'time':
 
 ```javascript
   $().ready(function() {
@@ -22,7 +24,7 @@ elements with class `time`:
   });
 ```
 
-## USE
+### USE
 
 fxtime uses a 12- or 24-hour format depending on the browser's locale.
 By default, only hours and minutes are displayed.
@@ -35,8 +37,7 @@ The following optional attributes are recognized on the INPUT element:
       minimum time value (in 24-hour format)
 * `max='hh:mm[:ss]'`
       maximum time value (in 24-hour format)
-
-* required
+* `required`
 
 If 'min' and/or 'max' are specified, validation will be performed
 against the time value, and the pseudo-classes :valid and :invalid
@@ -62,16 +63,32 @@ The following methods are available:
 
 The element fires the following custom events:
 
-* segblur - fires when a segment blurs
+* `segblur` - fires when a segment blurs
       segment number is supplied in the detail.seg property of the event
 
 NB: If you want to be notified of changes to the element, listen for
 'change' events.  'change' is fired when a user changes the time value,
 before focus is lost.  The element does NOT fire 'input' events.
 
-## LICENSE
+### KEYBOARD
+
+In addition to numeric time entry, the following keystrokes are
+recognised:
+
+* arrow up/down - increment/decrement the current time segment
+* `+` / `-` - increment/decrement the current time segment
+* tab/shift tab - advance to the next (previous) time segment
+* arrow right/left - advance to the next (previous) time segment
+* delete/backspace - clear the current time segment
+* `A` / `P` - set AM or PM (12 hour mode only)
+
+### LICENSE
 
 **jquery-fxtime** is released under the
 [**MIT LICENSE**](https://mit-license.org/)
+
+Firefox is a trademark of the Mozilla Foundation ('Mozilla').  This
+work incorporates no source code from Firefox or Mozilla, and is
+neither affiliated with nor endorsed by Mozilla.
 
 Copyright &copy; 2022-2024 Jim Mason.
