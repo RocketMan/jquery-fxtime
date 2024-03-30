@@ -1,5 +1,5 @@
 # jquery-fxtime
-Firefox-like time element plugin for jQuery
+Firefox-like time plugin for jQuery
 
 ### INSTALLATION
 
@@ -8,7 +8,7 @@ addition, include jQuery, if it has not already been included.  For
 example,
 
 ```html
-<!-- include jQuery, if you webpage has not already included it -->
+<!-- include jQuery, if your webpage has not already included it -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 <!-- include the minified jquery-fxtime.js -->
 <script src="https://cdn.jsdelivr.net/gh/RocketMan/jquery-fxtime/dist/jquery-fxtime.min.js"></script>
@@ -40,26 +40,25 @@ The following optional attributes are recognized on the INPUT element:
 * `required`
 
 If 'min' and/or 'max' are specified, validation will be performed
-against the time value, and the pseudo-classes :valid and :invalid
+against the time value, and the pseudo-classes `:valid` and `:invalid`
 will be set on the element as appropriate.
 
-If 'required' is specified, :valid will be set if and only if a valid
+If 'required' is specified, `:valid` will be set if and only if a valid
 time value has been entered.
 
 
 The following methods are available:
 
-* `$(selector).fxtime('val')` - get 24-hour time value
+* `$(selector).fxtime('val')` - get 24-hour time value;
       returns null if time is not set
-* `$(selector).fxtime('val', value)` - set 24-hour time value
+* `$(selector).fxtime('val', value)` - set 24-hour time value;
       value format is hh:mm[:ss], where 0 <= hh <= 23, or null
-* `$(selector).fxtime('seg', seg)` - get specified segment value
+* `$(selector).fxtime('seg', seg)` - get specified segment value;
       seg:  0 = hours, 1 = minutes, 2 = seconds, 3 = AM/PM
 * `$(selector).fxtime('seg', seg, value)` - set specified segment
 * `$(selector).fxtime('seg', seg, null)` - clear specified segment
 * `$(selector).fxtime('inc', seg)` - increment specified segment
 * `$(selector).fxtime('inc', seg, -1)` - decrement specified segment
-
 
 The element fires the following custom events:
 
