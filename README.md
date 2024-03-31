@@ -1,5 +1,4 @@
 # jquery-fxtime
-Firefox-like time plugin for jQuery
 
 ### ABOUT
 
