@@ -1,6 +1,25 @@
 # jquery-fxtime
 Firefox-like time plugin for jQuery
 
+### ABOUT
+
+jquery-fxtime is a plugin for jQuery that provides a Firefox-like time
+entry element.
+
+Features:
+
+* 12- or 24-hour clock based on the browser's locale
+* input keys restricted to legal values
+* first empty segment focused on entry
+* focus automatically advances to next segment
+* may optionally include seconds
+* can apply validation (required, minimum, maximum)
+
+Try a simple example here:
+
+https://jsfiddle.net/zookeeper/rv9bafkg/
+
+
 ### INSTALLATION
 
 1. Include the `jquery-fxtime.js` script in your webpage.  In
@@ -81,7 +100,7 @@ recognised:
 * delete/backspace - clear the current time segment
 * `A` / `P` - set AM or PM (12 hour mode only)
 
-### LICENSE
+### LEGAL
 
 **jquery-fxtime** is released under the
 [**MIT LICENSE**](https://mit-license.org/)
