@@ -1,4 +1,6 @@
 # jquery-fxtime
+[![license](https://badgen.net/github/license/RocketMan/jquery-fxtime)](https://github.com/RocketMan/jquery-fxtime/blob/master/LICENSE)
+[![CDN](https://data.jsdelivr.com/v1/package/gh/RocketMan/jquery-fxtime/badge)](https://www.jsdelivr.com/package/gh/RocketMan/jquery-fxtime)
 
 ### ABOUT
 
